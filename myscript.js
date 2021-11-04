@@ -25,7 +25,7 @@ function btnDisable(bool) {
   if (bool) {
     rollDice.style.backgroundColor = '#c7365f';
     hold.style.backgroundColor = '#c7365f';
-    newGame.style.backgroundColor = '#c7365f';
+    //newGame.style.backgroundColor = '#c7365f';
   } else {
     rollDice.style.backgroundColor = 'rgba(238, 222, 222, 0.61)';
     hold.style.backgroundColor = 'rgba(238, 222, 222, 0.61)';
