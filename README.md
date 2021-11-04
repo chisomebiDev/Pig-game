@@ -1,4 +1,4 @@
-# Pig-game
+# Pig-game with a twist (😉 to dont need to chnage players if you roll a 1)
 
 Game begins with player 1 (active player)
 When active player rolls dice the value gets added to the player's current roll
