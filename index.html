@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mystyle.css" />
+    <title>Pig Game 🐷</title>
+  </head>
+  <body>
+    <main class="screen">
+      <div class="player player1">
+        <h3 class="player-id player-id1">Player 1</h3>
+        <h1 class="score p1-score">0</h1>
+        <div class="current">
+          <p>Current</p>
+          <h4 class="value p1Value">0</h4>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btn new-game"><span>🔄 </span> New game</button>
+        <img src="dice-5.png" alt="dice image" class="dice-img visibility" />
+        <button class="btn roll-dice"><span>🎲</span> Roll dice</button>
+        <button class="btn hold"><span>📥</span> &nbsp;hold</button>
+      </div>
+      <div class="player player2">
+        <h3 class="player-id player-id2">Player 2</h3>
+        <h1 class="score p2-score">0</h1>
+        <div class="current">
+          <p class="current-text">Current</p>
+          <h4 class="value p2Value">0</h4>
+        </div>
+      </div>
+      <div class="background">
+        <div class="p1screen"></div>
+        <div class="p2screen"></div>
+      </div>
+    </main>
+    <script src="myscript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  font-size: 62.5%;
+}
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 50%;
+  }
+}
+body {
+  overflow: hidden;
+  align-content: center;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(to right bottom, #bf2e34, #753682);
+  color: #333;
+}
+p {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+.value {
+  text-align: center;
+}
+
+.screen {
+  overflow: hidden;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  justify-content: space-evenly;
+  height: max-content;
+  padding: 3vh 20vh;
+  box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.281);
+}
+
+@media screen and (max-width: 700px) {
+  .screen {
+    flex-direction: column;
+    padding: 5vh 10vh;
+    width: 100vw;
+  }
+}
+
+.player1,
+.player2,
+.controls {
+  width: 200px;
+}
+
+.background {
+  overflow: hidden;
+  display: flex;
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 9px;
+  overflow: hidden;
+}
+@media screen and (max-width: 700px) {
+  .background {
+    flex-direction: column;
+  }
+}
+.p1screen {
+  background-color: #bd7a94;
+  transition: all 1s;
+}
+.p2screen {
+  background-color: #dcaeb9;
+  transition: all 1s;
+  /* background-image: linear-gradient(to bottom right, #bd7a94, #ac7087); */
+}
+.p1screen,
+.p2screen {
+  /* position: absolute; */
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 700px) {
+  .p1screen,
+  .p2screen {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .player {
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #c7365f;
+  margin-bottom: 9vw;
+}
+@media screen and (max-width: 700px) {
+  .score {
+    font-size: 7rem;
+    font-weight: 300;
+    margin-bottom: 0vw;
+    order: 1;
+  }
+}
+.player-id {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 1.8vw;
+  font-weight: inherit;
+  transition: all 0.2s ease-in;
+}
+
+.increase-font {
+  font-weight: 600;
+}
+@media screen and (max-width: 700px) {
+  .player-id {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 0vw;
+    text-align: center;
+  }
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .controls {
+    gap: 20px;
+  }
+}
+
+.dice-img {
+  height: 150px;
+  width: 150px;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  border-radius: 5px;
+}
+.visibility {
+  visibility: hidden;
+}
+.hold,
+.roll-dice,
+.new-game {
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 200px;
+  color: inherit;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: translateY(-3px);
+  margin-bottom: 3vw;
+  background-color: rgba(238, 222, 222, 0.61);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.new-game {
+  width: 90%;
+  margin-top: 2rem;
+}
+button {
+  cursor: pointer;
+}
+.btn:active {
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-0px);
+}
+
+.current {
+  background-color: #c7365f;
+  width: 90%;
+  border-radius: 9px;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 700px) {
+  .current {
+    width: 500px;
+  }
+}
+.value {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 300;
+}
